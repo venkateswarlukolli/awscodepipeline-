@@ -1,0 +1,12 @@
+
+php:
+  version: '5.6'
+
+tests:
+  - type: phpunit
+    mode: parallel
+    output: exit-status
+    command: vendor/bin/solano-phpunit
+    config: phpunit.xml
+    files:
+      - tests/**Test.php
